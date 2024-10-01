@@ -16,7 +16,7 @@
 #define TPR     (0x0080/4)   // Task Priority
 #define EOI     (0x00B0/4)   // EOI
 #define SVR     (0x00F0/4)   // Spurious Interrupt Vector
-  #define ENABLE     0x00000100   // Unit Enable
+#define ENABLE     0x00000100   // Unit Enable
 #define ESR     (0x0280/4)   // Error Status
 #define ICRLO   (0x0300/4)   // Interrupt Command
   #define INIT       0x00000500   // INIT/RESET
@@ -43,7 +43,7 @@
 
 volatile uint *lapic;  // Initialized in mp.c
 
-//PAGEBREAK!
+//PAGEBREAK
 static void
 lapicw(int index, int value)
 {
