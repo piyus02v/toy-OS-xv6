@@ -32,5 +32,24 @@ Clone the repository and navigate to the project directory:
 ```bash
 git clone https://github.com/piyus02v/toy-OS-xv6.git
 cd toy-OS-xv6
-#biuercvrevr
+```
+## Building and running
+To build and run the OS, use the following commands
+```bash
+make
+make qemu
+```
+## Code Structure
+- **`kernel/`**: Core kernel code including memory management, scheduling, and process synchronization.
+- **`user/`**: User-level programs and test cases.
+- **`syscall.c`**: System calls for process and memory management.
+- **`Makefile`**: Build configuration for the project.
+
+## Contributing
+Contributions to improve the OS or add new features are welcome. Please submit a pull request or open an issue to discuss any changes.
+
+## Acknowledgments
+This project is built upon MIT's xv6, a simplified teaching OS. It serves as a foundation for understanding and experimenting with OS principles.
+
+
 
